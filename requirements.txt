@@ -1,0 +1,10 @@
+pandas
+numpy
+tqdm
+torch
+datasets
+transformers
+pinecone-client
+nltk
+rouge-score
+bert-score
