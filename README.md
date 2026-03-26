@@ -12,34 +12,22 @@ This repository contains a modular Retrieval-Augmented Generation (RAG) pipeline
 
 ## Project Structure
 
-\`\`\`text
-legal_text_summarization/
-├── src/
-│   ├── __init__.py       # Package initializer
-│   ├── config.py         # Global variables, model names, and API keys
-│   ├── utils.py          # Helper functions for text cleaning and parsing
-│   ├── data_loader.py    # Hugging Face dataset ingestion and preprocessing
-│   ├── chunker.py        # Tokenization and overlapping chunk generation
-│   ├── embedder.py       # BERT embeddings and Pinecone vector DB upserting
-│   ├── scorer.py         # Heuristic sentence importance scoring
-│   └── pipeline.py       # RAG retrieval, LLM prompting, and evaluation
-├── main.py               # Main execution script
-└── requirements.txt      # Python dependencies
-\`\`\`
+<img width="498" height="530" alt="image" src="https://github.com/user-attachments/assets/4c7645b4-9290-46c4-9955-a066c449dc43" />
+
 
 ## Installation & Setup
 
 1. **Clone the repository:**
-   \`\`\`bash
+   ```
    git clone https://github.com/yourusername/legal-text-summarization.git
    cd legal-text-summarization
-   \`\`\`
+   ```
 
 2. **Install dependencies:**
    Ensure you have Python 3.8+ installed, then run:
-   \`\`\`bash
+   ```
    pip install -r requirements.txt
-   \`\`\`
+   ```
    *(Note: If you plan to switch to the Mistral model in `config.py`, you will also need to install `bitsandbytes` and `accelerate` for 4-bit quantization).*
 
 3. **Configure Pinecone:**
@@ -49,9 +37,9 @@ legal_text_summarization/
 
 To run the entire pipeline end-to-end, simply execute:
 
-\`\`\`bash
+```
 python main.py
-\`\`\`
+```
 
 **What this does:**
 1. Downloads and cleans the dataset.
